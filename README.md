@@ -1,13 +1,13 @@
-🏎️ **F1 Race Winner Prediction using NLP + DistilBERT + LoRA**
+**F1 Race Winner Prediction using NLP + DistilBERT + LoRA**
 
-# 🏎️ Formula 1 Race Winner Prediction using NLP & DistilBERT (LoRA Finetuning)
+#  Formula 1 Race Winner Prediction using NLP & DistilBERT (LoRA Finetuning)
 
 This project predicts **the winner of a Formula 1 Grand Prix** using **text-based race summaries**, practice reports, and weekend analysis.
 It applies modern **NLP techniques**, **data balancing**, and **LoRA-based transformer finetuning** to classify which driver is most likely to win.
 
 ---
 
-# 📌 **Project Motivation**
+#  **Project Motivation**
 
 F1 race summaries contain rich contextual information:
 
@@ -23,7 +23,7 @@ A neural network can learn these patterns and predict the likely race winner.
 
 ---
 
-# 🚀 **Tech Stack**
+#  **Tech Stack**
 
 | Component  | Technology                                 |
 | ---------- | ------------------------------------------ |
@@ -37,7 +37,7 @@ A neural network can learn these patterns and predict the likely race winner.
 
 ---
 
-# 🗂️ **Folder Structure**
+#  **Folder Structure**
 
 ```
 NLP PROJECT/
@@ -70,20 +70,20 @@ NLP PROJECT/
 
 ---
 
-# 📚 **Dataset Preparation**
+#  **Dataset Preparation**
 
-### 1️⃣ **Raw Data**
+### 1️ **Raw Data**
 
 Collected F1 race weekend summaries (FP1/FP2/FP3, Qualifying, Race reports) from 2020–2024.
 
-### 2️⃣ **Cleaning**
+### 2️ **Cleaning**
 
 * Lowercasing
 * Removing special characters
 * Removing extra whitespace
 * Standardizing driver/team names
 
-### 3️⃣ **Label Encoding**
+###  **Label Encoding**
 
 Winners were encoded using:
 
@@ -91,7 +91,7 @@ Winners were encoded using:
 LabelEncoder()
 ```
 
-### 4️⃣ **Major Issue: Class Imbalance**
+###  **Major Issue: Class Imbalance**
 
 Most races were won by:
 
@@ -100,7 +100,7 @@ Most races were won by:
 
 Other drivers (Norris, Russell, Leclerc, Piastri) were heavily under-represented.
 
-### 5️⃣ **Balancing**
+###  **Balancing**
 
 A custom balancing script:
 
@@ -117,21 +117,21 @@ balanced_f1_dataset.csv
 
 ---
 
-# 🧠 **Model Architecture**
+#  **Model Architecture**
 
-## 🎯 1. Baseline: TF-IDF + Dense NN
+##  1. Baseline: TF-IDF + Dense NN
 
 (Built initially for testing)
 
-## 🎯 2. Transformer Models Tried
+##  2. Transformer Models Tried
 
-### ❌ Qwen2-0.5B + QLoRA
+###  Qwen2-0.5B + QLoRA
 
 * Too slow on CPU
 * BitsAndBytes 4-bit layers failed backward pass
 * Not suitable for Windows-CPU environment
 
-### ✅ Final Model: **DistilBERT + LoRA Finetuning**
+###  Final Model: **DistilBERT + LoRA Finetuning**
 
 Chosen because:
 
@@ -143,7 +143,7 @@ Chosen because:
 
 ---
 
-# 🔧 **Training Pipeline (DistilBERT + LoRA)**
+#  **Training Pipeline (DistilBERT + LoRA)**
 
 ### ✔ Tokenization (256 max length)
 
@@ -167,7 +167,7 @@ Training notebook:
 
 ---
 
-# 🧪 **Prediction Pipeline**
+#  **Prediction Pipeline**
 
 Prediction steps:
 
@@ -184,7 +184,7 @@ Notebook for predictions:
 
 ---
 
-# 🌐 **Streamlit App**
+#  **Streamlit App**
 
 File:
 
@@ -207,7 +207,7 @@ streamlit run app.py
 
 ---
 
-# 📈 **Results**
+#  **Results**
 
 ### After dataset balancing + LoRA finetuning:
 
@@ -227,7 +227,7 @@ streamlit run app.py
 
 ---
 
-# 🧭 **Key Learnings**
+#  **Key Learnings**
 
 * Raw transformer finetuning can be slow on CPU
 * QLoRA needs GPU to function properly
@@ -238,7 +238,7 @@ streamlit run app.py
 
 ---
 
-# 🚀 **How to Run the Project**
+#  **How to Run the Project**
 
 ### 1. Clone Repo
 
@@ -273,7 +273,7 @@ streamlit run app.py
 
 
 
-# ✨ **Author**
+#  **Authors**
 
 **Shrivatsh and Pranav**
 Mahindra University
