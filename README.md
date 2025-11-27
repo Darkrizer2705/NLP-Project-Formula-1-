@@ -74,7 +74,7 @@ NLP PROJECT/
 
 ### 1️ **Raw Data**
 
-Collected F1 race weekend summaries (FP1/FP2/FP3, Qualifying, Race reports) from 2020–2024.
+Collected and manually curated F1 race weekend summaries (Race reports) from 2018–2024.
 
 ### 2️ **Cleaning**
 
@@ -145,19 +145,19 @@ Chosen because:
 
 #  **Training Pipeline (DistilBERT + LoRA)**
 
-### ✔ Tokenization (256 max length)
+### Tokenization (256 max length)
 
-### ✔ LoRA adapters added to DistilBERT attention layers
+### LoRA adapters added to DistilBERT attention layers
 
-### ✔ Optimizer: AdamW
+### Optimizer: AdamW
 
-### ✔ Batch size: 8
+### Batch size: 8
 
-### ✔ Epochs: 4
+### Epochs: 4
 
-### ✔ Loss function: Cross Entropy
+### Loss function: Cross Entropy
 
-### ✔ PEFT saves only LoRA weights (very small)
+### PEFT saves only LoRA weights (very small)
 
 Training notebook:
 
