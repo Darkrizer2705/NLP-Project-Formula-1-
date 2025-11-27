@@ -63,8 +63,8 @@ NLP PROJECT/
 │       ├── bert_model.pt
 │       └── label_encoder.pkl
 │
-├── app.py                      # Streamlit App
-├── README.md                   # You are here
+├── app.py                      
+├── README.md                   
 └── requirements.txt
 ```
 
