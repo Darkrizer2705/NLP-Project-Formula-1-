@@ -5,7 +5,7 @@
 This project predicts **the winner of a Formula 1 Grand Prix** using **text-based race summaries**, practice reports, and weekend analysis.
 It applies modern **NLP techniques**, **data balancing**, and **LoRA-based transformer finetuning** to classify which driver is most likely to win.
 
----
+
 
 #  **Project Motivation**
 
@@ -21,7 +21,7 @@ F1 race summaries contain rich contextual information:
 
 A neural network can learn these patterns and predict the likely race winner.
 
----
+
 
 #  **Tech Stack**
 
@@ -35,7 +35,7 @@ A neural network can learn these patterns and predict the likely race winner.
 | Training   | CPU-friendly (no GPU required)             |
 | Libraries  | Transformers, PEFT, Datasets, Scikit-learn |
 
----
+
 
 #  **Folder Structure**
 
@@ -68,7 +68,7 @@ NLP PROJECT/
 └── requirements.txt
 ```
 
----
+
 
 #  **Dataset Preparation**
 
@@ -115,7 +115,7 @@ Final dataset stored as:
 balanced_f1_dataset.csv
 ```
 
----
+
 
 #  **Model Architecture**
 
@@ -141,7 +141,7 @@ Chosen because:
 * Excellent performance
 * Works perfectly with LoRA adapters (PEFT)
 
----
+
 
 #  **Training Pipeline (DistilBERT + LoRA)**
 
@@ -165,7 +165,7 @@ Training notebook:
 04_finetuning.ipynb
 ```
 
----
+
 
 #  **Prediction Pipeline**
 
@@ -182,7 +182,7 @@ Notebook for predictions:
 03_prediction.ipynb
 ```
 
----
+
 
 #  **Streamlit App**
 
@@ -205,7 +205,7 @@ Run using:
 streamlit run app.py
 ```
 
----
+
 
 #  **Results**
 
@@ -225,7 +225,7 @@ streamlit run app.py
 
 (based on balanced dataset split)
 
----
+
 
 #  **Key Learnings**
 
@@ -236,7 +236,7 @@ streamlit run app.py
 * LoRA drastically reduces training time
 * Streamlit brings the model to life with a clean UI
 
----
+
 
 #  **How to Run the Project**
 
@@ -279,6 +279,6 @@ streamlit run app.py
 Mahindra University
 NLP Project — Formula 1 Winner Prediction
 
----
+
 
 
