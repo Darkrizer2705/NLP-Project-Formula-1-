@@ -1,27 +1,4 @@
-Below is a **complete, professional, GitHub-ready README.md** for your entire NLP project:
-
 🏎️ **F1 Race Winner Prediction using NLP + DistilBERT + LoRA**
-Includes:
-
-* Project overview
-* Dataset explanation
-* Pipeline & architecture
-* Preprocessing steps
-* Balancing methodology
-* Model training (DistilBERT + LoRA)
-* Attempts (Qwen2 QLoRA)
-* Streamlit App
-* Installation
-* Folder structure
-* How to run
-* Results
-* Future improvements
-
-You can directly paste this into your `README.md` in your Git repository.
-
----
-
-# ⭐ **README.md — Formula 1 Race Winner Prediction (NLP Project)**
 
 # 🏎️ Formula 1 Race Winner Prediction using NLP & DistilBERT (LoRA Finetuning)
 
